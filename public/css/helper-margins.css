@@ -1,0 +1,100 @@
+.mt-2 {
+    margin-top: 5px;
+}
+
+.mt-10p {
+    margin-top: 10%;
+}
+.mt-5p {
+    margin-top: 5%;
+}
+.about-chalet li:before {
+    content: '\f00c';
+    font-family: FontAwesome;
+    font-size: 18px;
+    color: #74cc6c;
+    padding-right: 10px;
+}
+.about-chalet {
+    font-size: 18px;
+    color: #666;
+    padding: 0;
+    margin: 25px 0;
+    list-style: none;
+}
+
+.post-quote {
+    background: #3cbeee;
+    color: #f6f8f8;
+    border-radius: 30px;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.post-quote blockquote:before {
+    content: '\f10d';
+    font-family: 'fontawesome';
+    display: inline-block;
+    float: left;
+    color: #f6f8f8;
+    font-size: 72px;
+    position: absolute;
+    left: 30px;
+    top: 0;
+    font-style: normal;
+    opacity: .5;
+}
+.post-quote blockquote:after {
+    content: '\f10e';
+    font-family: 'fontawesome';
+    display: inline-block;
+    float: right;
+    color: #f6f8f8;
+    font-size: 72px;
+    position: relative;
+    right: 30px;
+    top: 0;
+    font-style: normal;
+    opacity: .5;
+}
+.post-quote blockquote {
+    margin: 0;
+    padding: 55px 0;
+    font-style: italic;
+    font-size: 24px;
+    border: 0;
+}
+
+#custom-show-hide h3:before {
+    content: "\e959";
+    font-family: LineIcons;
+    font-size: 18px;
+    color: #62fb54;
+    padding-right: 10px;
+}
+
+#custom-show-hide h3 {
+    background: #1389d5;
+    padding: 8px 14px;
+    box-shadow: 10px 10px 14px -10px rgba(148, 148, 148, 1);
+    border-radius: 5px 5px 0 0;
+}
+
+#custom-show-hide h3 a:hover,
+#custom-show-hide h3 a:active,
+#custom-show-hide h3 a:visited {
+    text-decoration: none;
+}
+
+#custom-show-hide div {
+    background: #f7f7f7;
+    padding: 8px;
+    margin-top: -15px;
+    margin-bottom: 8px;
+    border-radius: 0 0 5px 5px;
+}
+
+#custom-show-hide h3 a {
+    color: #fff;
+    font-weight: 500;
+}

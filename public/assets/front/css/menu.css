@@ -1,0 +1,24 @@
+.header-menu {
+
+}
+
+.dropdown-menu li a {
+    padding: 10px !important
+}
+.navbar-custom {
+    list-style: none;
+}
+
+.navbar-custom .open a {
+   color: #636363;
+    background: white;
+}
+.navbar-custom .open a:hover {
+    background: #f1f1f1;
+    color: #3cbeee;
+}
+
+.quote-btn {
+    margin-top: -13px;
+    margin-left: 30px;
+}

@@ -1,0 +1,91 @@
+select {
+
+    /* styling */
+    background-color: white;
+    border: thin solid blue;
+    border-radius: 4px;
+    display: inline-block;
+    font: inherit;
+    line-height: 1.5em;
+    padding: 0.5em 3.5em 0.5em 1em;
+
+    /* reset */
+
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+
+.about-chalet {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+.about-chalet li:before {
+    content: '\f00c';
+    font-family: FontAwesome;
+    font-size: 18px;
+    color: #74cc6c;
+    padding-right: 10px;
+}
+
+.custom-form {
+    font-size: 17px !important;
+    height: 45px !important;
+    background-image:
+        linear-gradient(45deg, transparent 50%, gray 50%),
+        linear-gradient(135deg, gray 50%, transparent 50%),
+        radial-gradient(#ddd 70%, transparent 72%) !important;
+    background-position:
+        calc(100% - 20px) calc(1em + 2px),
+        calc(100% - 15px) calc(1em + 2px),
+        calc(100% - .5em) .5em !important;
+    background-size:
+        5px 5px,
+        5px 5px,
+        1.5em 1.5em !important;
+    background-repeat: no-repeat !important;
+}
+.modal-trigger:hover {
+    color: #99ffa3;
+}
+.modal-trigger {
+    background: #0ebcf2;
+    color: #fff;
+    padding: 7px;
+    z-index: 2;
+    font-size: 20px;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-top: -35px;
+    position: absolute;
+    border: none;
+    outline: 0;
+}
+
+@media(max-width: 992px) {
+    #container-menu {
+        background: #333333;
+    }
+    #container-menu ul {
+        background: #fff;
+    }
+    #new-search {
+        margin-bottom: 5px;
+    }
+    .search-tabs-bg > h1 {
+        font-size: 42px;
+    }
+    .search-tabs-bg > .tabbable > .tab-content > .tab-pane {
+        margin-bottom: 22px;
+    }
+}
+

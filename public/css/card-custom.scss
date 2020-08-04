@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans&display=swap');
+@import url('https://cdn.lineicons.com/1.0.1/LineIcons.min.css');
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+textarea:focus, input:focus {
+    outline: none;
+}
+
+input[type=number] {
+    -moz-appearance: textfield; /* Firefox */
+}
+
+.columns, .column, .columns {
+    padding-left: 0;
+    padding-right: 0;
+    min-height: 1px;
+}
+
+.sale-item {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+    margin-bottom: 1rem;
+    color: #fff;
+
+    .data {
+        -webkit-border-top-right-radius: .3rem;
+        -webkit-border-bottom-right-radius: 0;
+        -webkit-border-bottom-left-radius: 0;
+        -webkit-border-top-left-radius: .3rem;
+        -moz-border-radius-topright: .3rem;
+        -moz-border-radius-bottomright: 0;
+        -moz-border-radius-bottomleft: 0;
+        -moz-border-radius-topleft: .3rem;
+        border-top-right-radius: .3rem;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        border-top-left-radius: .3rem;
+        box-shadow: none;
+        outline: none;
+        text-align: center;
+        padding: 1em 1.5em !important;
+        background-color: #0060a1;
+        border: .0625rem solid #0060a1;
+        border-bottom: 0;
+        color: #fff;
+    }
+
+    .remove {
+        background: #018dcc;
+        width: 70px;
+        height: 48px;
+        float: left;
+        color: #fff;
+        margin-top: -2px;
+        text-align: center;
+        align-items: center;
+        padding-top: 10px;
+
+        &:hover {
+            background: #089de0;
+            cursor: pointer;
+        }
+
+        i {
+            font-size: 30px;
+        }
+    }
+
+    .add-more {
+        background: #018dcc;
+        width: 70px;
+        height: 48px;
+        float: right;
+        color: #fff;
+        margin-top: -2px;
+        text-align: center;
+        align-items: center;
+        padding-top: 10px;
+
+        &:hover {
+            background: #089de0;
+            cursor: pointer;
+        }
+
+        i {
+            font-size: 30px;
+        }
+    }
+}
+
+.sale-item::before, .sale-item::after {
+    content: ' ';
+    display: table;
+}
+
+.sale-item .data.clickable {
+    background-color: #04a2e8;
+    border-color: #03a2e8;
+    cursor: pointer;
+    font-family: 'Fira Sans', sans-serif;
+
+    &:hover {
+        background-color: #038dcc;
+        border-color: #018dcc;
+    }
+
+    .equalizer-caption {
+        margin: 0;
+        padding: 0;
+
+        .name {
+            margin-bottom: -.2em;
+            font-size: 1.2rem;
+            line-height: 1.5rem;
+            overflow-wrap: break-word;
+        }
+    }
+}
+
+.sale-item .data .price {
+    -moz-opacity: .5;
+    -webkit-opacity: .5;
+    opacity: .5;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=50)";
+    filter: "alpha(opacity=50)";
+    padding-top: .2em;
+    font-weight: 500;
+}
+
+.sale-item .data .rules {
+    -moz-opacity: .5;
+    -webkit-opacity: .5;
+    opacity: .5;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=50)";
+    filter: "alpha(opacity=50)";
+    display: block;
+    text-transform: uppercase;
+    font-size: .7rem;
+}
+
+.sale-item .quantity {
+    display: block;
+    height: 3rem;
+    background: #038dcc;
+    margin-top: -2px;
+    text-align: center;
+
+    input {
+        padding: 0;
+        border: 0;
+        margin: 0;
+        font-size: 2em;
+        width: 100%;
+        height: 100%;
+        padding-top: .35rem;
+        text-align: center;
+        color: inherit;
+        box-shadow: none;
+        background-color: transparent;
+        font-weight: 700;
+    }
+}
+
+.sale-item .add, .sale-item .sold-out-label {
+    width: 100%;
+    -webkit-border-top-right-radius: 0;
+    -webkit-border-bottom-right-radius: .3rem;
+    -webkit-border-bottom-left-radius: .3rem;
+    -webkit-border-top-left-radius: 0;
+    -moz-border-radius-topright: 0;
+    -moz-border-radius-bottomright: .3rem;
+    -moz-border-radius-bottomleft: .3rem;
+    -moz-border-radius-topleft: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: .3rem;
+    border-bottom-left-radius: .3rem;
+    border-top-left-radius: 0;
+    box-shadow: none;
+    outline: none;
+    height: 3rem;
+    text-align: center;
+    background-color: #0068ad;
+    border: .0625rem solid #0068ad;
+    border-top-width: 0;
+    border-left-width: 0;
+}
+
+.sale-item .add {
+    background-color: #03A9F4;
+    border-color: #039BE5;
+    cursor: pointer;
+
+    .icon-add {
+        font-size: 30px;
+    }
+
+    &:hover {
+        background-color: #038dcc;
+        border-color: #018dcc;
+    }
+}
+
+// Styles of selected
+.sale-item.selected .add, .sale-item.selected .sold-out-label {
+    width: 33.33333%;
+    -webkit-border-top-right-radius: 0;
+    -webkit-border-bottom-right-radius: .3rem;
+    -webkit-border-bottom-left-radius: 0;
+    -webkit-border-top-left-radius: 0;
+    -moz-border-radius-topright: 0;
+    -moz-border-radius-bottomright: .3rem;
+    -moz-border-radius-bottomleft: 0;
+    -moz-border-radius-topleft: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: .3rem;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    box-shadow: none;
+    outline: none;
+    color: #695313;
+    background-color: #f8f880;
+    border-color: #e4e400;
+}
+
+.card-custom {
+    background: #018dcc;
+    border-bottom: 2px solid rgba(0, 0, 0, .125);
+
+    .card-header {
+        h5 {
+            ul.top-info {
+                padding: 0;
+                margin: 0;
+
+                li:last-child {
+                    display: inline-block;
+                    float: right;
+                    color: #f8f9fa;
+                    padding-top: 0;
+                    margin-left: 5px;
+                    font-size: 17px;
+
+                    span.cart {
+                        font-size: 22px;
+                        color: #ffdd55;
+                    }
+                    span.total-title {
+                        font-size: 13px;
+                    }
+                    span.total-price {
+                        color: #f1d762;
+                    }
+                }
+
+                a {
+                    color: #fff;
+
+                    &:hover {
+                        text-decoration: none;
+                        cursor: pointer;
+                    }
+
+                    i {
+                        font-size: 35px;
+                    }
+
+                    ul.data-info {
+                        display: table-caption;
+                        margin-left: 5px;
+                        margin-bottom: 0;
+                        font-size: 13px;
+                        list-style-type: none;
+                        padding-left: 5px;
+
+                        li {
+                            display: inline-block;
+                        }
+
+                        li:last-child {
+                            span {
+                                font-size: 15px;
+                                color: #ffdd55;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+.button-custom:hover {
+    cursor: pointer !important;
+}
+.table td {
+    padding: 0;
+    border: none;
+    vertical-align: inherit;
+}
+
+.c-body-custom {
+    background: rgba(52,182,241,1);
+    background: -moz-linear-gradient(top, rgba(52,182,241,1) 0%, rgba(14,148,209,1) 73%, rgba(0,136,197,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(52,182,241,1) 0%, rgba(14,148,209,1) 73%, rgba(0,136,197,1) 100%);
+    background: -o-linear-gradient(top, rgba(52,182,241,1) 0%, rgba(14,148,209,1) 73%, rgba(0,136,197,1) 100%);
+    background: -ms-linear-gradient(top, rgba(52,182,241,1) 0%, rgba(14,148,209,1) 73%, rgba(0,136,197,1) 100%);
+    background: linear-gradient(to bottom, rgba(52,182,241,1) 0%, rgba(14,148,209,1) 73%, rgba(0,136,197,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#34b6f1', endColorstr='#0088c5', GradientType=0 );
+}
+
+.table-custom {
+    thead {
+        tr {
+            th {
+                color: #fff;
+                border-top: none;
+            }
+        }
+    }
+}

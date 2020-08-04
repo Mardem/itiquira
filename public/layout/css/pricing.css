@@ -1,0 +1,129 @@
+section#pricing {
+    background: #ffffff bottom;
+}
+.btn {
+    font-family: montserrat, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    padding: 10px 25px;
+    position: relative;
+    background: #3cbeee;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    border-radius: 25px;
+    color: #fefefe;
+    box-shadow: 5.5px 9px 15px 0 rgba(0, 0, 0, .2);
+    -webkit-transition: all .8s ease;
+    -moz-transition: all .8s ease;
+    -ms-transition: all .8s ease;
+    -o-transition: all .8s ease;
+    transition: all .8s ease;
+}
+
+section#pricing .section-descr {
+    padding-bottom: 25px;
+    margin: 0
+}
+
+section#pricing .pricing-wrapper {
+    text-align: center;
+    border-radius: 30px;
+    background: #f6f8f8;
+    box-shadow: 5.5px 9px 15px 0 rgba(0, 0, 0, .2)
+}
+
+.pricing-header:before {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: #f6f8f8;
+    top: -30px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border-radius: 20px 20px 0 0
+}
+
+.pricing-header:after {
+    content: '';
+    display: block;
+    width: 12px;
+    height: 12px;
+    background: #ededed;
+    border: 1px solid #e0e0e0;
+    top: -20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border-radius: 50%;
+    box-shadow: inset 1px 2px 3px 0 rgba(0, 0, 0, .1)
+}
+
+section#pricing .pricing-header .price {
+    font-size: 50px;
+    font-family: "Roboto", sans-serif !important;
+    font-weight: 300;
+    padding: 15px 0
+}
+
+section#pricing .pricing-plan {
+    text-transform: uppercase;
+    padding: 15px 0
+}
+
+section#pricing .pricing-plan img {
+    width: 70px;
+    height: 45px
+}
+
+.price .value {
+    color: #333333
+}
+section#pricing .pricing-plan h4 {
+    color: #f6f8f8;
+    padding-top: 10px
+}
+
+ul.pricing-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #999
+}
+
+ul.pricing-features li {
+    font-family: montserrat, sans-serif;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee
+}
+
+.pricing-footer {
+    padding: 30px 0
+}
+
+section#pricing #basic .pricing-plan {
+    background: #3cbeee
+}
+
+section#pricing #pro .pricing-plan {
+    background: #f69504
+}
+
+section#pricing #pro .pricing-footer .btn {
+    background: #f69504
+}
+
+section#pricing #ultra .pricing-plan {
+    background: #ef0002
+}
+
+section#pricing #ultra .pricing-footer .btn {
+    background: #ef0002
+}
